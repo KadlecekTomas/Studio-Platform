@@ -99,7 +99,7 @@ test("English homepage proof and enquiry CTAs resolve", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1 })).toContainText(/Pragotour/i);
 
   await page.goto("/", { waitUntil: "networkidle" });
-  await page.getByRole("link", { name: /start with a discovery sprint/i }).click();
+  await page.getByRole("link", { name: /start a discovery sprint/i }).click();
   await expect(page).toHaveURL(/\/contact$/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText(/Nejdřív/i);
 });
