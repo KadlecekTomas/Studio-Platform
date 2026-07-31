@@ -51,5 +51,5 @@ test("contact form exposes its essential fields", async ({ page }) => {
 
   await expect(page.getByLabel(/jméno/i)).toBeVisible();
   await expect(page.getByLabel(/e-mail/i)).toBeVisible();
-  await expect(page.getByRole("button")).toBeVisible();
+  await expect(page.getByRole("button", { name: /připravit poptávku/i })).toBeVisible();
 });
