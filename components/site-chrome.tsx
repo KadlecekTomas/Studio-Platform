@@ -35,10 +35,16 @@ export function SiteHeader({ locale = "cs" }: { locale?: Locale }) {
         <span>Studio Platform</span>
       </Link>
       <nav aria-label={text.navigationLabel}>
-        <Link href={localizedHref(locale, "services")}>{text.services}</Link>
-        <Link href={localizedHref(locale, "method")}>{text.method}</Link>
-        <Link href={localizedHref(locale, "caseStudy")}>{text.caseStudy}</Link>
-        <Link href={localizedHref(targetLocale, "home")} hrefLang={targetLocale} lang={targetLocale} aria-label={text.switchLabel}>
+        <Link className="nav-secondary" href={localizedHref(locale, "services")}>{text.services}</Link>
+        <Link className="nav-secondary" href={localizedHref(locale, "method")}>{text.method}</Link>
+        <Link className="nav-secondary" href={localizedHref(locale, "caseStudy")}>{text.caseStudy}</Link>
+        <Link
+          className="locale-switch"
+          href={localizedHref(targetLocale, "home")}
+          hrefLang={targetLocale}
+          lang={targetLocale}
+          aria-label={text.switchLabel}
+        >
           {localeLabels[targetLocale]}
         </Link>
         <Link className="nav-cta" href={localizedHref(locale, "contact")}>{text.contact}</Link>
