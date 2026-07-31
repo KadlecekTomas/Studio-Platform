@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./routes.css";
+import "./i18n.css";
 
 export const metadata: Metadata = {
   title: "Studio Platform — Product systems for real operations",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="cs">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
