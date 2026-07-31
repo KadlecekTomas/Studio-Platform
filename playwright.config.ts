@@ -9,7 +9,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [["list"], ["html", { outputFolder: "playwright-report", open: "never" }]],
   use: {
-    baseURL: "http://127.0.0.1:3000",
+    baseURL: "http://localhost:3000",
     trace: "retain-on-failure",
     screenshot: "only-on-failure",
     video: "retain-on-failure",
@@ -17,23 +17,30 @@ export default defineConfig({
   projects: [
     {
       name: "mobile-iphone",
-      use: { ...devices["iPhone 13"] },
+      use: {
+        ...devices["iPhone 13"],
+        browserName: "chromium",
+      },
     },
     {
       name: "tablet-ipad",
-      use: { ...devices["iPad Mini"] },
+      use: {
+        ...devices["iPad Mini"],
+        browserName: "chromium",
+      },
     },
     {
       name: "desktop-chromium",
       use: {
         ...devices["Desktop Chrome"],
+        browserName: "chromium",
         viewport: { width: 1440, height: 1000 },
       },
     },
   ],
   webServer: {
-    command: "npm run dev",
-    url: "http://127.0.0.1:3000",
+    command: "npm run dev -- --hostname localhost",
+    url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },
