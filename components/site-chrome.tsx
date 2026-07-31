@@ -24,7 +24,7 @@ const copy = {
   },
 } as const;
 
-export function SiteHeader({ locale = "en" }: { locale?: Locale }) {
+export function SiteHeader({ locale = "cs" }: { locale?: Locale }) {
   const text = copy[locale];
   const targetLocale = alternateLocale(locale);
 
@@ -38,12 +38,7 @@ export function SiteHeader({ locale = "en" }: { locale?: Locale }) {
         <Link href={localizedHref(locale, "services")}>{text.services}</Link>
         <Link href={localizedHref(locale, "method")}>{text.method}</Link>
         <Link href={localizedHref(locale, "caseStudy")}>{text.caseStudy}</Link>
-        <Link
-          href={localizedHref(targetLocale, "home")}
-          hrefLang={targetLocale}
-          lang={targetLocale}
-          aria-label={text.switchLabel}
-        >
+        <Link href={localizedHref(targetLocale, "home")} hrefLang={targetLocale} lang={targetLocale} aria-label={text.switchLabel}>
           {localeLabels[targetLocale]}
         </Link>
         <Link className="nav-cta" href={localizedHref(locale, "contact")}>{text.contact}</Link>
@@ -52,7 +47,7 @@ export function SiteHeader({ locale = "en" }: { locale?: Locale }) {
   );
 }
 
-export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
+export function SiteFooter({ locale = "cs" }: { locale?: Locale }) {
   return (
     <footer className="site-footer shell">
       <Link className="brand" href={localizedHref(locale, "home")}>
