@@ -1,1 +1,1 @@
-export { metadata, default } from "../../../../case-studies/ck-pragotour/page";
+export { metadata, default } from "../../../case-studies/ck-pragotour/page";
