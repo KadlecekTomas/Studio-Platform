@@ -21,7 +21,7 @@ const process = ["Pochopit", "Ověřit", "Navrhnout", "Postavit", "Prověřit", 
 
 export default function CzechHome() {
   return (
-    <main>
+    <main lang="cs">
       <SiteHeader locale="cs" />
       <section className="hero shell" id="top">
         <div className="eyebrow"><span /> Produktové studio pro provozně důležitý software</div>
