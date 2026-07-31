@@ -8,7 +8,7 @@ export function SiteHeader() {
         <span>Studio Platform</span>
       </Link>
       <nav aria-label="Hlavní navigace">
-        <Link href="/#services">Služby</Link>
+        <Link href="/sluzby">Služby</Link>
         <Link href="/#method">Metoda</Link>
         <Link href="/case-studies/ck-pragotour">Case study</Link>
         <Link className="nav-cta" href="/kontakt">Probrat projekt</Link>
