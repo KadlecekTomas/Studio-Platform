@@ -91,6 +91,14 @@ test("homepage variants publish canonical and alternate language metadata", asyn
   await expect(page.locator('link[rel="alternate"][hreflang="cs"]')).toHaveAttribute("href", /\/cs$/);
 });
 
+test("homepage variants expose the correct content language", async ({ page }) => {
+  await page.goto("/", { waitUntil: "networkidle" });
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+
+  await page.goto("/cs", { waitUntil: "networkidle" });
+  await expect(page.locator("main")).toHaveAttribute("lang", "cs");
+});
+
 test("English homepage proof and enquiry CTAs resolve", async ({ page }) => {
   await page.goto("/", { waitUntil: "networkidle" });
 
