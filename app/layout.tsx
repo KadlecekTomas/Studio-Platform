@@ -3,9 +3,9 @@ import "./globals.css";
 import "./routes.css";
 
 export const metadata: Metadata = {
-  title: "Studio Platform — Product systems for real operations",
+  title: "Knozi — weby, aplikace a systémy, které dávají smysl",
   description:
-    "Studio Platform designs and builds operational software, client portals and internal systems for organisations that have outgrown spreadsheets and disconnected tools.",
+    "Knozi navrhuje a staví weby, digitální produkty a interní systémy, které lidé pochopí bez návodu.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
