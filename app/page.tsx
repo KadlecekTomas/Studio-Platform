@@ -20,7 +20,7 @@ const capabilities = [
   {
     index: "04",
     title: "Education",
-    text: "Vyvíjíme také vlastní produkty pro školy a učitele. Technologie má učiteli práci ubírat, ne vytvářet další místo, které musí spravovat.",
+    text: "Pro školy stavíme vlastní výukové produkty. Technologie má učiteli ubrat práci, ne vytvořit další systém, který musí spravovat.",
   },
 ];
 
@@ -66,9 +66,9 @@ export default function Home() {
 
               <div className="home-hero-bottom">
                 <p>
-                  Navrhujeme a stavíme weby a software pro firmy a školy. Začínáme
-                  u konkrétního problému v reálném provozu a končíme produktem,
-                  který lidé dokážou skutečně používat.
+                  Navrhujeme a stavíme weby a software pro firmy a školy.
+                  Nezačínáme seznamem funkcí. Nejdřív pochopíme problém a potom
+                  postavíme jen to, co ho skutečně řeší.
                 </p>
                 <div className="home-hero-actions">
                   <Link className="button button-primary" href="/kontakt">
@@ -209,7 +209,13 @@ export default function Home() {
         <div className="shell">
           <div className="home-section-intro home-section-intro-inverse">
             <span className="kicker">03 / Od problému k provozu</span>
-            <h2>Nezačínáme seznamem funkcí.</h2>
+            <div>
+              <h2>Nestačí, že kód funguje.<br />Musí fungovat i produkt.</h2>
+              <p className="home-method-positioning">
+                Návrh, vývoj a provoz neřešíme odděleně. Každé rozhodnutí musí dávat
+                smysl člověku, který bude výsledný produkt skutečně používat.
+              </p>
+            </div>
           </div>
 
           <div className="home-method-grid">
@@ -234,8 +240,12 @@ export default function Home() {
             <br />
             <em>Ukažte nám problém.</em>
           </h2>
+          <p className="home-closing-copy">
+            Popište nám, co dnes nefunguje, co děláte ručně nebo kde zbytečně
+            ztrácíte čas. Technické řešení je naše práce.
+          </p>
           <Link className="button home-closing-button" href="/kontakt">
-            Probrat projekt ↗
+            Ukázat nám problém ↗
           </Link>
         </div>
       </section>
