@@ -192,7 +192,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-method">
+      <section className="home-method" id="method">
         <div className="shell">
           <div className="home-section-intro home-section-intro-inverse">
             <span className="kicker">03 / Jak pracujeme</span>
