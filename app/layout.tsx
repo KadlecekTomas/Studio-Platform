@@ -3,9 +3,9 @@ import "./globals.css";
 import "./routes.css";
 
 export const metadata: Metadata = {
-  title: "Knozi — weby, aplikace a systémy, které dávají smysl",
+  title: "Knozi — weby, aplikace a interní systémy pro firmy a školy",
   description:
-    "Knozi navrhuje a staví weby, digitální produkty a interní systémy, které lidé pochopí bez návodu.",
+    "Navrhujeme a stavíme weby a software pro firmy a školy. Nejdřív pochopíme problém, potom postavíme řešení pro skutečný provoz.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
