@@ -98,8 +98,8 @@ export default function Home() {
                     <span />
                     <span />
                   </div>
-                  <strong>12 481</strong>
-                  <small>záznamů pod kontrolou</small>
+                  <strong>KNOZI</strong>
+                  <small>chaos dovnitř · jasno ven</small>
                 </div>
                 <div className="system-card-flow">
                   <span>INPUT</span>
