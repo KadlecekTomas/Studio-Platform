@@ -24,7 +24,7 @@ export function SiteFooter() {
         <span className="brand-mark" aria-hidden="true">K</span>
         <span>KNOZI</span>
       </Link>
-      <p>Digital products people understand.</p>
+      <p>Weby, aplikace a systémy pro skutečný provoz.</p>
       <span>© {new Date().getFullYear()}</span>
     </footer>
   );
